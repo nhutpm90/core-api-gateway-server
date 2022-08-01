@@ -21,16 +21,6 @@ public class CoreApiGatewayServerApplication {
 	RouteLocator myRoutes(RouteLocatorBuilder builder) {
 	    return builder.routes()
 	        .route(p -> p
-	            .path("/my-app/test-config/**")
-	            .filters(f -> f.rewritePath("/my-app/test-config/(?<segment>.*)","/${segment}")
-	            				.addResponseHeader("X-Response-Time",new Date().toString()))
-	            .uri("lb://TEST-CONFIG"))
-	        .route(p -> p
-		            .path("/my-app/eureka-client/**")
-		            .filters(f -> f.rewritePath("/my-app/eureka-client/(?<segment>.*)","/${segment}")
-		            		.addResponseHeader("X-Response-Time",new Date().toString()))
-		            .uri("lb://EUREKA-CLIENT"))
-	        .route(p -> p
 		            .path("/my-app/api-gateway-client01/**")
 		            .filters(f -> f.rewritePath("/my-app/api-gateway-client01/(?<segment>.*)","/${segment}")
 		            				.addResponseHeader("X-Response-Time",new Date().toString()))
