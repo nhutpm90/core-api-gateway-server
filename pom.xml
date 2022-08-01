@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>core.mircoservices.gateway</groupId>
 	<artifactId>core-api-gateway-server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>core-api-gateway-server</name>
 	<description>Core Api Gateway Server</description>
 	<properties>
