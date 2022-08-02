@@ -62,7 +62,7 @@
 		<!-- tracing end -->
 		
 		<!-- security begin -->
-		<!--
+		<!-- -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
@@ -75,7 +75,7 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-oauth2-jose</artifactId>
 		</dependency>
-		-->
+		<!-- -->
 		<!-- security end -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
